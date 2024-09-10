@@ -1,0 +1,102 @@
+:root {
+    --lightGrey: #c5c3c6;
+    --darkerGrey: #4b5a68;
+    --pastelBlue: #b0e4db;
+    --boxColor: #ededee;
+    --font: 'Varela Round', sans-serif;
+    --hoverDarkerGrey: #3b4b57;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+}
+
+header {
+    flex-grow: 1;
+    background-color: var(--darkerGrey);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 3px black;
+}
+
+#headerText {
+    color: var(--pastelBlue);
+    font-size: 100px;
+}
+
+
+main {
+    flex-grow: 1;
+    background-color: var(--lightGrey);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#instructionText {
+    padding: 50px;
+    font-size: 60px;
+}
+
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+    height: 140px;
+    width: 140px;
+    border: black 2px solid;
+    background-color: var(--boxColor);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+}
+
+.box:hover {
+    background-color: var(--pastelBlue);
+}
+
+#resetButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 40px;
+    color: var(--pastelBlue);
+    border-radius: 10px;
+    background-color: var(--darkerGrey);
+    border: 2px solid black;
+}
+
+#resetButton:hover {
+    background-color: var(--hoverDarkerGrey);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    height: 30px;
+    background-color:var(--lightGrey);
+}
+
+
+#footerText {
+    font-weight: normal;
+    font-size: 20px;
+}
