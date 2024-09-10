@@ -23,6 +23,7 @@ header {
     flex-grow: 1;
     background-color: var(--darkerGrey);
     height: 100px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
